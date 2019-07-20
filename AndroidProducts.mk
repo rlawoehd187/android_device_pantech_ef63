@@ -13,5 +13,9 @@
 # either express or implied. See the License for the specific
 # language governing permissions and limitations under the
 # License.
- PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixys_ef63.mk
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosip_ef63.mk \
+
+COMMON_LUNCH_CHOICES := \
+    aosip_ef63-userdebug \
+    aosip_ef63-eng
