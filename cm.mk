@@ -16,7 +16,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from ef63l device
-$(call inherit-product, device/pantech/ef63l/device.mk)
+$(call inherit-product, device/pantech/ef63/device.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
@@ -25,16 +25,16 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Call the proprietary setup
-$(call inherit-product-if-exists, vendor/pantech/ef63l/ef63l-vendor.mk)
+$(call inherit-product-if-exists, vendor/pantech/ef63/ef63-vendor.mk)
 
-PRODUCT_NAME := cm_ef63l
+PRODUCT_NAME := cm_ef63
 PRODUCT_DEVICE := ef63l
 PRODUCT_MANUFACTURER := PANTECH
-PRODUCT_MODEL := IM-A910L
+PRODUCT_MODEL := Vega Iron 2
 
-PRODUCT_GMS_CLIENTID_BASE := android-ef63l
+PRODUCT_GMS_CLIENTID_BASE := android-ef63
 
 PRODUCT_BRAND := PANTECH
 TARGET_VENDOR := PANTECH
-TARGET_VENDOR_PRODUCT_NAME := ef63l
-TARGET_VENDOR_DEVICE_NAME := ef63l
+TARGET_VENDOR_PRODUCT_NAME := ef63
+TARGET_VENDOR_DEVICE_NAME := ef63

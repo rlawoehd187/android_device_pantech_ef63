@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-PLATFORM_PATH := device/pantech/ef63l
+PLATFORM_PATH := device/pantech/ef63
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
@@ -42,7 +42,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 BOARD_DTBTOOL_ARGS := -2
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_CONFIG := cyanogenmod_ef63_defconfig
+TARGET_KERNEL_CONFIG := LineageOS_ef63_defconfig
 TARGET_KERNEL_SOURCE := kernel/pantech/msm8x74
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
@@ -126,8 +126,8 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_ef63l
-TARGET_RECOVERY_DEVICE_MODULES := libinit_ef63l
+TARGET_INIT_VENDOR_LIB := libinit_ef63
+TARGET_RECOVERY_DEVICE_MODULES := libinit_ef63
 TARGET_UNIFIED_DEVICE := true
 
 # Keymaster
@@ -177,7 +177,7 @@ WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_AP           := "ap"
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/pantech/ef63l/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/pantech/ef63/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
 TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
@@ -202,4 +202,4 @@ ifeq ($(BOARD_USES_QCNE),true)
 TARGET_LDPRELOAD := libNimsWrap.so
 endif
 
--include vendor/pantech/ef63l/BoardConfigVendor.mk
+-include vendor/pantech/ef63/BoardConfigVendor.mk
